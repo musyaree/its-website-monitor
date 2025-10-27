@@ -17,8 +17,15 @@ filename = "hasil_pengujian.csv"
 # Jalankan speedtest
 print("Menjalankan speedtest di server Pulau Jawa...")
 st = speedtest.Speedtest()
-st.get_servers(servers_jawa)
-st.get_best_server()
+
+try:
+    servers_jawa = [57415, 3697, 28922]  # Surabaya, Jakarta, Bandung
+    st.get_servers(servers_jawa)
+    st.get_best_server()
+except Exception:
+    print("Server Jawa tidak cocok dengan lokasi runner. Menggunakan server terdekat otomatis...")
+    st.get_best_server()
+
 download = round(st.download() / 1_000_000, 2)
 upload = round(st.upload() / 1_000_000, 2)
 ping = round(st.results.ping, 2)
