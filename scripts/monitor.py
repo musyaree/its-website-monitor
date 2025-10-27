@@ -9,17 +9,20 @@ import speedtest
 # Server di Pulau Jawa 
 servers_jawa = [45311, 3697, 62263]
 
-print("Menjalankan speedtest di server Pulau Jawa...")
+print("Menjalankan speedtest...")
 
 try:
     st = speedtest.Speedtest()
-    st.get_servers(servers_jawa)
+    try:
+        st.get_servers([45311, 3697, 62263])  # Surabaya, Jakarta, Semarang
+    except Exception:
+        st.get_servers([])  # fallback ke server global
     st.get_best_server()
     download = round(st.download() / 1_000_000, 2)
     upload = round(st.upload() / 1_000_000, 2)
     ping = round(st.results.ping, 2)
 except Exception as e:
-    print("Speedtest gagal dijalankan:", e)
+    print("Speedtest gagal:", e)
     download = upload = ping = 0.0
 
 # Daftar website ITS
