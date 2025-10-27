@@ -6,17 +6,14 @@ import pytz
 import os
 import speedtest
 
-# Server di Pulau Jawa 
-servers_jawa = [45311, 3697, 62263]
-
 print("Menjalankan speedtest...")
 
 try:
     st = speedtest.Speedtest()
     try:
-        st.get_servers([45311, 3697, 62263])  # Surabaya, Jakarta, Semarang
+        st.get_servers([45311, 3697, 62263]) 
     except Exception:
-        st.get_servers([])  # fallback ke server global
+        st.get_servers([]) 
     st.get_best_server()
     download = round(st.download() / 1_000_000, 2)
     upload = round(st.upload() / 1_000_000, 2)
@@ -67,7 +64,7 @@ for url in urls:
         status_code = 0
     rows.append([timestamp, url, status_code, total_bytes, elapsed, ping, download, upload])
 
-# Simpan ke CSV (buat baru jika belum ada)
+# Simpan ke CSV 
 try:
     with open(filename, "x", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
