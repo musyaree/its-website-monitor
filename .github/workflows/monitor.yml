@@ -5,12 +5,15 @@ on:
     - cron: "*/15 * * * *"  # setiap 15 menit
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   monitor:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Python
@@ -19,13 +22,19 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Jalankan monitor.py
+      - name: Jalankan monitoring
         run: python scripts/monitor.py
 
-      - name: Upload hasil CSV
-        uses: actions/upload-artifact@v4
-        with:
-          name: hasil_pengujian
-          path: hasil_pengujian.csv
+      - name: Commit hasil pengujian ke repo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add hasil_pengujian.csv
+          git commit -m "Update hasil pengujian $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
