@@ -6,8 +6,8 @@ import pytz
 import os
 import speedtest
 
-# Server di Pulau Jawa (Surabaya, Jakarta, Bandung)
-servers_jawa = [57415, 3697, 28922]
+# Server di Pulau Jawa 
+servers_jawa = [45311, 3697, 62263]
 
 print("Menjalankan speedtest di server Pulau Jawa...")
 
