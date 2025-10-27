@@ -2,7 +2,7 @@ name: Monitor Website ITS
 
 on:
   schedule:
-    - cron: "*/15 * * * *"  # setiap 15 menit
+    - cron: "*/5 * * * *"  # setiap 5 menit
   workflow_dispatch:
 
 permissions:
