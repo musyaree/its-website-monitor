@@ -3800,3 +3800,6 @@ timestamp,url,status_code,total_bytes,elapsed_time,ping_ms,download_Mbps,upload_
 2025-11-17 02:30:57 WIB,https://portal.its.ac.id,200,2499,1.683,3.4,2927.34,1789.14
 2025-11-17 02:30:57 WIB,https://classroom.its.ac.id,200,47258,6.842,3.4,2927.34,1789.14
 2025-11-17 02:30:57 WIB,https://presensi.its.ac.id,200,41611,4.22,3.4,2927.34,1789.14
+2025-11-17 02:43:13 WIB,https://portal.its.ac.id,200,2499,6.078,21.49,3279.63,994.42
+2025-11-17 02:43:13 WIB,https://classroom.its.ac.id,200,47258,1.792,21.49,3279.63,994.42
+2025-11-17 02:43:13 WIB,https://presensi.its.ac.id,200,41660,7.76,21.49,3279.63,994.42
