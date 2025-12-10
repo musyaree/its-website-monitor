@@ -7940,3 +7940,6 @@ timestamp,url,status_code,total_bytes,elapsed_time,ping_ms,download_Mbps,upload_
 2025-12-10 17:51:24 WIB,https://portal.its.ac.id,200,2499,1.537,17.43,3525.89,1197.67
 2025-12-10 17:51:24 WIB,https://classroom.its.ac.id,200,47258,1.746,17.43,3525.89,1197.67
 2025-12-10 17:51:24 WIB,https://presensi.its.ac.id,200,41721,3.872,17.43,3525.89,1197.67
+2025-12-10 18:09:58 WIB,https://portal.its.ac.id,200,2499,1.336,4.36,2435.64,1650.24
+2025-12-10 18:09:58 WIB,https://classroom.its.ac.id,200,47258,1.638,4.36,2435.64,1650.24
+2025-12-10 18:09:58 WIB,https://presensi.its.ac.id,200,41672,3.063,4.36,2435.64,1650.24
