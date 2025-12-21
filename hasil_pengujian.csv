@@ -9770,3 +9770,6 @@ timestamp,url,status_code,total_bytes,elapsed_time,ping_ms,download_Mbps,upload_
 2025-12-22 00:13:23 WIB,https://portal.its.ac.id,200,2499,1.594,11.92,4021.96,1577.37
 2025-12-22 00:13:23 WIB,https://classroom.its.ac.id,200,47258,1.664,11.92,4021.96,1577.37
 2025-12-22 00:13:23 WIB,https://presensi.its.ac.id,200,41815,3.657,11.92,4021.96,1577.37
+2025-12-22 00:33:14 WIB,https://portal.its.ac.id,200,2499,6.085,28.15,4987.96,2636.17
+2025-12-22 00:33:14 WIB,https://classroom.its.ac.id,200,47258,10.917,28.15,4987.96,2636.17
+2025-12-22 00:33:14 WIB,https://presensi.its.ac.id,200,41818,7.403,28.15,4987.96,2636.17
