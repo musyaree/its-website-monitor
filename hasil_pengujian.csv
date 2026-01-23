@@ -14645,3 +14645,6 @@ timestamp,url,status_code,total_bytes,elapsed_time,ping_ms,download_Mbps,upload_
 2026-01-23 06:51:15 WIB,https://portal.its.ac.id,200,2809,9.984,16.69,2659.54,1817.03
 2026-01-23 06:51:15 WIB,https://classroom.its.ac.id,200,47258,5.388,16.69,2659.54,1817.03
 2026-01-23 06:51:15 WIB,https://presensi.its.ac.id,200,41833,8.458,16.69,2659.54,1817.03
+2026-01-23 08:14:04 WIB,https://portal.its.ac.id,200,2809,1.77,4.42,2230.18,1520.18
+2026-01-23 08:14:04 WIB,https://classroom.its.ac.id,200,47258,1.725,4.42,2230.18,1520.18
+2026-01-23 08:14:04 WIB,https://presensi.its.ac.id,200,41787,3.53,4.42,2230.18,1520.18
